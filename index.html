@@ -1,117 +1,301 @@
 <!DOCTYPE html>
-<html lang="ja">
-
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
-	<meta name="description" content="ホームページサンプル株式会社のサイトです">
-	<title>ホームページサンプル株式会社 | ホームページサンプル株式会社のサイトです</title>
-	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link rel="stylesheet" type="text/css" media="all" href="style.css">
-	<!--[if lt IE 9]>
-	<script src="js/html5.js"></script>
-	<script src="js/css3-mediaqueries.js"></script>
-	<![endif]-->
-	<script src="js/jquery1.4.4.min.js"></script>
-	<script src="js/script.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ITエンジニア Ikuma Hayashi ポートフォリオ">
+  <meta property="og:url" content="https://ikumahayashi.github.io/">
+  <meta property="og:description" content="ITエンジニア Ikuma Hayashi ポートフォリオです。">
+  <meta property="og:image" content="img/ogp.png">
+  <meta name="description" content="ITエンジニア Ikuma Hayashi ポートフォリオです。" />
+  <title>Ikuma Hayashi's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Yesteryear" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
+  <link href="css/reset.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/photoswipe/photoswipe.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/photoswipe/default-skin/default-skin.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 
 <body>
-
-	<header id="header" role="banner">
-		<div class="inner">
-			<div class="logo">
-				<a href="index.html" title="ホームページサンプル株式会社" rel="home">Company Name<br /><span>Your Company Slogan</span></a>
-				<h1>ホームページサンプル株式会社のサイトです</h1>
+  <div id="wrapper">
+    <header id="header">
+      <h1 class="logo">
+        <span class="logo-title">Ikuma Hayashi's PORTFOLIO</span>
+        <span class="logo-desc">IT Enginner</span>
+      </h1>
+    </header>
+    <nav id="gnav">
+      <ul>
+		<li><a href="#about">ABOUT</a></li>
+        <li><a href="#works">WORKS</a></li>
+        <li><a href="#skill">SKILL</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+    <main id="contents">
+		<section class="section" id="about">
+			<div class="inner">
+				<div class="section-title-block">
+				<h2 class="section-title">ABOUT</h2>
+				</div>
+				<div class="two-column-wrapper">
+				<div class="two-column-image">
+					<img src="img/profile/img_profile.png" alt="">
+				</div>
+				<div class="two-column-desc">
+					<p class="text">
+						はじめまして、いくまと申します。<br/>
+						高専専攻科卒という特殊な学歴を持っており、産まれてからずっと岐阜で生きてきました。<br/>
+						本業は2012年4月から愛知の某企業にて業務系SEをやっています。<br/>
+						Windowsのデスクトップアプリケーションを中心にシステム開発を行っています。<br/>
+						プライベートでもお仕事を募集しています。ただし、兼業ですがぜひご相談ください。
+					</p>
+				</div>
+				</div>
 			</div>
-			<nav id="mainNav">
-				<div class="inner">
-					<a class="menu" id="menu"><span>MENU</span></a>
-					<div class="panel">
-						<ul id="topnav">
-							<li class="current-menu-item"><a href="index.html"><strong>トップページ</strong><br /><span>Top</span></a></li>
-							<li><a href="sample.html"><strong>ごあいさつ</strong><br /><span>Greeting</span></a>
-								<ul class="sub-menu">
-									<li><a href="sample.html">代表メッセージ</a></li>
-									<li><a href="sample.html">社員の声</a></li>
-								</ul>
-							</li>
-							<li><a href="sample.html"><strong>サービス概要</strong><br /><span>Service</span></a></li>
-							<li><a href="sample.html"><strong>弊社の取り組み</strong><br /><span>Approach</span></a></li>
-							<li><a href="sample.html"><strong>会社概要</strong><br /><span>Company</span></a></li>
-							<li><a href="sample.html"><strong>お問い合わせ</strong><br /><span>Contact</span></a></li>
-						</ul>
+		</section>
+
+		<!--
+      <section class="section" id="latestworks">
+        <div class="inner">
+          <div class="section-title-block">
+            <h2 class="section-title">LATEST WORKS</h2>
+            <p class="section-desc">
+              最新の制作実績です。
+            </p>
+          </div>
+          <div class="two-column-wrapper">
+            <div class="two-column-image">
+              <img src="img/latestworks/latestworks.jpg" alt="">
+            </div>
+            <div class="two-column-desc">
+              <p class="text">
+                作品タイトル：●●●●●<br> 担当：Design / Coding / WordPress<br> 制作期間：●ヶ月
+                <br> URL：
+                <a href="#">http://●●●.com</a><br>
+                <br> コメント：
+                <br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+            </div>
+          </div>
+        </div>
+	  </section>
+	  -->
+      <section class="section" id="works">
+        <div class="inner">
+          <div class="section-title-block">
+            <h2 class="section-title">WORKS</h2>
+            <div class="section-desc">
+              <p class="text">
+                これまでの制作実績です。</p>
+            </div>
+          </div>
+          <div class="card-wrapper my-gallery">
+            <figure class="card">
+              <a href="img/works/FormMaker.PNG" data-size="980x668" class="card-image">
+          			<img src="img/works/thumb/Thumb_FormMaker.PNG" alt="" />
+          		</a>
+              <figcaption class="card-caption">
+                <p class="card-caption-title">診断票メーカー</p>
+                <p class="card-caption-info">
+					血液検査の診断結果を指定フォーマットのExcelファイルへ出力するシステムです。<br/>
+					C# / WPF / SQLServer(LocalDB)
+				</p>
+                <p class="card-caption-url"><a class="url-link" href="＃" target="_blank">Link</a></p>
+              </figcaption>
+			</figure>
+			<!--
+            <figure class="card">
+              <a href="img/works/dammy.jpg" data-size="980x668" class="card-image">
+                <img src="img/works/thumb/thumb_dammy.jpg" alt="" />
+              </a>
+              <figcaption class="card-caption">
+                <p class="card-caption-title">作品タイトル</p>
+                <p class="card-caption-info">Design / Coding</p>
+                <p class="card-caption-url"><a class="url-link" href="＃" target="_blank">Link</a></p>
+              </figcaption>
+			</figure>
+			-->
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skill">
+        <div class="inner">
+          <div class="section-title-block">
+            <h2 class="section-title">SKILL</h2>
+		  </div>
+		  
+          <div class="card-wrapper">
+
+            <div class="card">
+              <div class="skill-icon">
+                <img src="img/skill/dotnet.svg" alt="">
+              </div>
+              <div class="skill-desc">
+                <h3 class="skill-desc-title">.NET (C# / VB)</h3>
+                <div class="rating">
+                  <p class="rate rate4"></p>
+                </div>
+                <p class="text">
+					従来のWindowsフォームだけではなく、WPFアプリケーションの制作も手掛けています。
+				</p>
+              </div>
+			</div>
+			
+            <div class="card">
+					<div class="skill-icon">
+					  <img src="img/skill/html-5.svg" alt="">
 					</div>
-				</div>
-			</nav>
-		</div>
-	</header>
+					<div class="skill-desc">
+					  <h3 class="skill-desc-title">HTML5 / CSS</h3>
+					  <div class="rating">
+						<p class="rate rate4"></p>
+					  </div>
+					  <p class="text">
+						  本サイトもHTML5 + CSSで作成しました。
+					  </p>
+					</div>
+				  </div>
 
-	<div id="mainBanner">
-		<div class="inner">
-			<img src="images/banners/mainImg.jpg" width="940" height="300" alt="ホームページサンプル株式会社のサイトです">
-		</div>
-	</div>
+            <div class="card">
+              <div class="skill-icon">
+                <img src="img/skill/oracle.png" alt="">
+              </div>
+              <div class="skill-desc">
+                <h3 class="skill-desc-title">Oracle</h3>
+                <div class="rating">
+                  <p class="rate rate3"></p>
+                </div>
+                <p class="text">本業にて5年ほど保守運用中。Oracle Master Bronze取得済み。</p>
+              </div>
+			</div>
+        </div>
+        </div>
+      </section>
+      <section class="section" id="contact">
+        <div class="inner">
+          <div class="section-title-block">
+            <h2 class="section-title">CONTACT</h2>
+            <p class="section-desc">
+              お問合わせはTwitter DM もしくは メールへお気軽にどうぞ！
+            </p>
+          </div>
+          <div class="contact-wrapper">
+            <div class="contact-list">
+              <ul>
+				<li>
+					<a href="https://twitter.com/hisk_of_gnct" target="_blank">
+						<i class="fab fa-twitter fa-4x twitter-icon-color"></i>
+						<br/>
+						<span class="contact-list-desc">Twitter</span>
+					</a>
+				</li>
+				<li>
+					<a href="mailto:ikuma.hayashi.tech@gmail.com" target="_blank">
+						<i class="fas fa-envelope fa-4x"></i>
+						<br/>
+						<span class="contact-list-desc">メール</span>
+					</a>
+				</li>
+			  </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <nav class="footer-link">
+          <ul>
+            <li><a href="#works">WORKS</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skill">SKILL</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+        <p class="copyright">Copyright&copy;Ikuma Hayashi. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </div>
 
-	<div id="wrapper">
-		<section class="gridWrapper">
-			<article class="grid">
-				<div class="box">
-					<h3>ホームページサンプル</h3>
-					<p class="img"><img width="220" height="220" src="images/banners/eyecatch1.jpg" alt="" /></p>
-					<p>ホームページサンプル株式取り組み ホームページサンプル株式会社と自然との調和を目指。 &#8230;</p>
-					<p class="readmore"><a href="sample.html">詳細を確認する</a></p>
-				</div>
-			</article>  
-			<article class="grid">
-				<div class="box">
-					<h3>自然との調和を目指す</h3>
-					<p class="img"><img width="220" height="220" src="images/banners/eyecatch2.jpg" alt="" /></p>
-					<p>ホームページサンプル株式会社の取り組み では最新技術と自然との自然との調和を目指。 &#8230;</p>
-					<p class="readmore"><a href="sample.html">詳細を確認する</a></p>
-				</div>
-			</article>  
-			<article class="grid">
-				<div class="box">
-					<h3>ホームページ株式会社</h3>
-					<p class="img"><img width="220" height="220" src="images/banners/eyecatch3.jpg" alt="" /></p>
-					<p>ホームページサンプル株式会社の取り組み ホームページサンプル株式会社では調和を目指。 &#8230;</p>
-					<p class="readmore"><a href="sample.html">詳細を確認する</a></p>
-				</div>
-			</article>
-			<article class="grid">
-				<div class="box">
-					<h3>自然との調和を目指す</h3>
-					<p class="img"><img width="220" height="220" src="images/banners/eyecatch4.jpg" alt="" /></p>
-					<p>ホームページサンプル株式会社の取り組み ホームページサンプル株式会社では調和を目指します。 &#8230;</p>
-					<p class="readmore"><a href="sample.html">詳細を確認する</a></p>
-				</div>
-			</article>
-		</section>
-		<section id="post-221" class="content">
-			<h3 class="heading">ホームページ株式会社では最新技術との調和</h3>
-			<article class="post">
-				<p><img src="images/banners/sample1.jpg" alt="" width="260" height="113" class="alignright" />ホームページサンプル株式会社では最新技術と自然との調和を目指します。革新的な技術で世の中を動かす企業を目指します。ホームページサンプル株式会社では最新技術と自然との調和を目指します。革新的な技術で世の中を動かす企業を目指します。ホームページサンプル株式会社では最新技術と自然との調和を目指します。革新的な技術で世の中を動かす。株式会社では最新技術と自然との調和を目指します。革新的な技術で世の中を動かす企業。ホームページサンプル株式会社では最新技術と自然との革新的な技術で世の中を調和を目指します。革新的な技術で世の中を動かす企業。動かす企業。</p><p>ホームページサンプル株式会社では最新技術と自然との調和を目指します。革新的な技術で世の中を動かす企業を目指します。ホームページサンプル株式会社では最新技術と自然との調和を目指します。</p>
-			</article>
-		</section>
-	</div>
 
-	<footer id="footer">
-		<div class="inner">
-			<section class="gridWrapper">
-				<article class="grid">
-					<p class="logo"><a href="index.html" title="ホームページサンプル株式会社" rel="home">Company Name<br /><span>Your Company Slogan</span></a></p>
-				</article>
-				<article class="grid">
-					<p class="tel"><span>電話:</span> <strong>012-3456-7890</strong></p>
-					<p class="open">受付時間: 平日 AM 10:00 〜 PM 5:00</p>
-				</article>
-				<article class="grid copyright">
-					Copyright(c) 2016 ホームページサンプル株式会社 All Rights Reserved. Design by <a href="http://f-tpl.com" target="_blank" rel="nofollow">http://f-tpl.com</a>
-				</article>
-			</section>
-		</div>
-	</footer>
+  <!-- Root element of PhotoSwipe. Must have class pswp. -->
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
+    <!-- Background of PhotoSwipe.
+           It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+      <!-- Container that holds slides.
+              PhotoSwipe keeps only 3 of them in the DOM to save memory.
+              Don't modify these 3 pswp__item elements, data is added later on. -->
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+
+      <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+      <div class="pswp__ui pswp__ui--hidden">
+
+        <div class="pswp__top-bar">
+
+          <!--  Controls are self-explanatory. Order can be changed. -->
+
+          <div class="pswp__counter"></div>
+
+          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+
+
+          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+          <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+          <!-- element will get class pswp__preloader--active when preloader is running -->
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+          <div class="pswp__share-tooltip"></div>
+        </div>
+
+        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+              </button>
+
+        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+              </button>
+
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="js/photoswipe/photoswipe.min.js"></script>
+  <script type="text/javascript" src="js/photoswipe/photoswipe-ui-default.js"></script>
+  <script type="text/javascript" src="js/photoswipe/photoswipe_setup.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
